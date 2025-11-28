@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import seemlyLogo from "@/assets/seemly-logo.jpg";
+import seemlyLogo from "@/assets/seemly-logo.png";
 
 const HeroSection = () => {
   return (

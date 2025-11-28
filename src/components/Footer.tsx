@@ -1,4 +1,4 @@
-import seemlyLogo from "@/assets/seemly-logo.jpg";
+import seemlyLogo from "@/assets/seemly-logo.png";
 
 const Footer = () => {
   return (

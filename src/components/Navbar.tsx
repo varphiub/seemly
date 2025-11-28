@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import seemlyLogo from "@/assets/seemly-logo.jpg";
+import seemlyLogo from "@/assets/seemly-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-header backdrop-blur-xl border-b border-border/50">
       <div className="container-tight section-padding py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
