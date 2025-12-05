@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import seemlyLogo from "@/assets/seemly-logo.png";
 
@@ -7,14 +7,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
+    { label: "Features", href: "#features" },
+    { label: "How It Works", href: "#how-it-works" },
+    { label: "Demo", href: "#demo" },
     { label: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-header backdrop-blur-xl border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-header/95 backdrop-blur-xl border-b border-border/30">
       <div className="container-tight section-padding py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
@@ -27,12 +27,13 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+                className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium"
               >
                 {link.label}
               </a>
             ))}
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" className="gap-2">
+              <Phone className="w-4 h-4" />
               Get Started
             </Button>
           </div>
@@ -54,13 +55,14 @@ const Navbar = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium py-2"
+                  className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="mt-2 w-fit">
+              <Button variant="hero" size="sm" className="mt-2 w-fit gap-2">
+                <Phone className="w-4 h-4" />
                 Get Started
               </Button>
             </div>
