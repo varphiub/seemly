@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Bot, Zap } from "lucide-react";
+import { Phone, Bot, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -47,14 +47,17 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 animate-fade-in"
             style={{ animationDelay: "0.6s", opacity: 0 }}
           >
-            <Button variant="hero" size="xl" className="group gap-2">
-              <Phone className="w-5 h-5" />
-              Start Free Trial
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+            <Button variant="hero" size="xl" className="group gap-2" asChild>
+              <a href="tel:+918792631321">
+                <Phone className="w-5 h-5" />
+                +91 8792631321
+              </a>
             </Button>
-            <Button variant="heroOutline" size="xl" className="gap-2">
-              <Zap className="w-5 h-5" />
-              Watch Demo
+            <Button variant="heroOutline" size="xl" className="gap-2" asChild>
+              <a href="#demo">
+                <Zap className="w-5 h-5" />
+                Watch Demo
+              </a>
             </Button>
           </div>
 
