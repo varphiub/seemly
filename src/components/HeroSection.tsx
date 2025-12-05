@@ -50,7 +50,7 @@ const HeroSection = () => {
             <Button variant="hero" size="xl" className="group gap-2" asChild>
               <a href="tel:+918792631321">
                 <Phone className="w-5 h-5" />
-                +91 8792631321
+                Contact Us
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" className="gap-2" asChild>
