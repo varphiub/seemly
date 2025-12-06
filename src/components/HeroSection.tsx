@@ -1,4 +1,4 @@
-import { Phone, Bot, Zap } from "lucide-react";
+import { Phone, Bot, Zap, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -51,6 +51,12 @@ const HeroSection = () => {
               <a href="tel:+918792631321">
                 <Phone className="w-5 h-5" />
                 Contact Us
+              </a>
+            </Button>
+            <Button variant="heroOutline" size="xl" className="gap-2 bg-green-600 hover:bg-green-700 border-green-600 text-white" asChild>
+              <a href="https://wa.me/918792631321" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" className="gap-2" asChild>
