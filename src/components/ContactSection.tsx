@@ -21,8 +21,8 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Google Sheets Web App URL - will be configured later
-      const GOOGLE_SHEET_URL = "";
+      // Google Sheets Web App URL
+      const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyNGPcTDoMVlbAKk-49or93t-kv2JHPPErHdrRbjeXjIG3HvbItT7tlhWdpSRYBroIBAA/exec";
       
       if (GOOGLE_SHEET_URL) {
         await fetch(GOOGLE_SHEET_URL, {
