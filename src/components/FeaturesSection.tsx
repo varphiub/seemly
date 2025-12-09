@@ -44,36 +44,36 @@ const FeaturesSection = () => {
     <section id="features" className="relative">
       <div className="container-tight section-padding">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary font-semibold tracking-wider uppercase text-sm">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16 px-2">
+          <span className="text-primary font-semibold tracking-wider uppercase text-xs sm:text-sm">
             Features
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">
             Everything You Need to
             <span className="gradient-text"> Automate Calls</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Our AI calling agent handles the entire call lifecycle, from initial outreach to conversion.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="glass rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 group"
+              className="glass rounded-xl sm:rounded-2xl p-5 sm:p-8 hover:border-primary/50 transition-all duration-300 group"
               style={{
                 animationDelay: `${index * 0.1}s`,
               }}
             >
-              <div className={`w-14 h-14 rounded-xl bg-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 ${feature.color}`}>
-                <feature.icon className="w-7 h-7" />
+              <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-card flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 ${feature.color}`}>
+                <feature.icon className="w-6 h-6 sm:w-7 sm:h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>
             </div>

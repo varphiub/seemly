@@ -32,9 +32,11 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="hero" size="sm" className="gap-2">
-              <Phone className="w-4 h-4" />
-              Get Started
+            <Button variant="hero" size="sm" className="gap-2" asChild>
+              <a href="https://wa.me/918792631321" target="_blank" rel="noopener noreferrer">
+                <Phone className="w-4 h-4" />
+                Get Started
+              </a>
             </Button>
           </div>
 
@@ -61,9 +63,11 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="mt-2 w-fit gap-2">
-                <Phone className="w-4 h-4" />
-                Get Started
+              <Button variant="hero" size="sm" className="mt-2 w-fit gap-2" asChild>
+                <a href="https://wa.me/918792631321" target="_blank" rel="noopener noreferrer">
+                  <Phone className="w-4 h-4" />
+                  Get Started
+                </a>
               </Button>
             </div>
           </div>

@@ -26,7 +26,7 @@ const HeroSection = () => {
           
           {/* Main Headline */}
           <h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 sm:mb-6 animate-fade-in"
             style={{ animationDelay: "0.2s", opacity: 0 }}
           >
             <span className="text-foreground">AI That</span>
@@ -36,7 +36,7 @@ const HeroSection = () => {
           
           {/* Sub-headline */}
           <p 
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 sm:mb-10 px-2 animate-fade-in"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
             Automate lead qualification, appointment scheduling, customer support, and sales outreach with our intelligent AI calling agent. Available 24/7.
@@ -63,7 +63,7 @@ const HeroSection = () => {
 
           {/* Stats */}
           <div 
-            className="grid grid-cols-3 gap-8 md:gap-16 mt-20 animate-fade-in"
+            className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 mt-12 sm:mt-20 animate-fade-in"
             style={{ animationDelay: "0.8s", opacity: 0 }}
           >
             {[
@@ -72,8 +72,8 @@ const HeroSection = () => {
               { value: "24/7", label: "Always On" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold gradient-text">{stat.value}</div>
-                <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">{stat.value}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">{stat.label}</div>
               </div>
             ))}
           </div>

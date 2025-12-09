@@ -59,39 +59,39 @@ const ContactSection = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
       
       <div className="container-tight section-padding relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-20">
           {/* Left - Content */}
-          <div>
-            <span className="text-primary font-semibold tracking-wider uppercase text-sm">
+          <div className="text-center lg:text-left">
+            <span className="text-primary font-semibold tracking-wider uppercase text-xs sm:text-sm">
               Get in Touch
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">
               Ready to Automate
               <span className="gradient-text"> Your Calls?</span>
             </h2>
-            <p className="text-muted-foreground text-lg mb-8">
+            <p className="text-muted-foreground text-base sm:text-lg mb-6 sm:mb-8">
               Fill out the form and our team will reach out to discuss how our AI calling agent can transform your business operations.
             </p>
 
             {/* Quick Info */}
-            <div className="space-y-4">
-              <div className="glass rounded-xl p-4">
-                <div className="text-sm text-muted-foreground">Response Time</div>
-                <div className="font-semibold">Within 24 hours</div>
+            <div className="grid sm:grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-4">
+              <div className="glass rounded-lg sm:rounded-xl p-3 sm:p-4">
+                <div className="text-xs sm:text-sm text-muted-foreground">Response Time</div>
+                <div className="font-semibold text-sm sm:text-base">Within 24 hours</div>
               </div>
-              <div className="glass rounded-xl p-4">
-                <div className="text-sm text-muted-foreground">Email</div>
-                <div className="font-semibold text-primary">deepaksharma.primary@gmail.com</div>
+              <div className="glass rounded-lg sm:rounded-xl p-3 sm:p-4">
+                <div className="text-xs sm:text-sm text-muted-foreground">Email</div>
+                <div className="font-semibold text-primary text-sm sm:text-base break-all">deepaksharma.primary@gmail.com</div>
               </div>
-              <div className="glass rounded-xl p-4">
-                <div className="text-sm text-muted-foreground">Free Trial</div>
-                <div className="font-semibold">100 calls included</div>
+              <div className="glass rounded-lg sm:rounded-xl p-3 sm:p-4">
+                <div className="text-xs sm:text-sm text-muted-foreground">Free Trial</div>
+                <div className="font-semibold text-sm sm:text-base">100 calls included</div>
               </div>
             </div>
           </div>
 
           {/* Right - Form */}
-          <div className="glass rounded-2xl p-8 border-primary/20">
+          <div className="glass rounded-xl sm:rounded-2xl p-5 sm:p-8 border-primary/20">
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
