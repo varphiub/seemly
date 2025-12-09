@@ -65,6 +65,18 @@ const DemoSection = () => {
             <Volume2 className="w-4 h-4" />
             <span className="text-sm">Turn on audio for the full experience</span>
           </div>
+
+          {/* CTA Text */}
+          <div className="text-center mt-10 p-6 glass rounded-xl border border-primary/20">
+            <p className="text-lg md:text-xl text-foreground">
+              Liked the demo? We can build a{" "}
+              <span className="text-primary font-semibold">custom AI calling agent</span>{" "}
+              for your business.
+            </p>
+            <p className="text-muted-foreground mt-2">
+              Fill the form below to get started!
+            </p>
+          </div>
         </div>
       </div>
     </section>
